@@ -1,4 +1,4 @@
-# Image Classification using AWS SageMaker
+# Image Classification with AWS SageMaker
 
 **TODO:** Write a short introduction to your project.
 
