@@ -18,17 +18,32 @@ The provided dataset is a dog breed classification dataset. It contains images o
 
 ## Project Steps
 
-Hyperparameter Tuning Steps:<br>
-Introduction:<br> The notebook highlights using hyperparameter tuning to optimize model performance by fine-tuning a pre-trained model in SageMaker.<br>
-Hyperparameter Setup:<br> Defines a range of hyperparameters (lr, batch-size, epochs) using SageMaker’s ContinuousParameter, CategoricalParameter, and IntegerParameter.<br>
-Hyperparameter Tuner Creation:<br> Creates a HyperparameterTuner object with configurations like objective_metric_name, tuning ranges, job limits, and metric definitions.<br>
-Hyperparameter Tuning Execution: Runs the tuning process with tuner.fit using S3 paths for training and validation datasets.
-Accessing Results: Demonstrates fetching the best hyperparameters from the tuning job.
-Best Hyperparameter Selection: Constructs a dictionary of the best hyperparameters, including batch size and learning rate.
-Optional Estimator Attachments: Provides flexibility to attach and control the estimator outside the tuner context.
-Metric Analysis: Includes definitions and regex for tracking metrics like epoch_accuracy and epoch_loss during tuning.
-Parallel Jobs: Configures parallel jobs to accelerate hyperparameter tuning without exceeding resource limits.
-Validation Strategy: Specifies a split between training and validation datasets for robust tuning outcomes.
+<p>
+**Hyperparameter Tuning Steps:**<br>
+The notebook highlights hyperparameter tuning to optimize model performance by fine-tuning a pre-trained model in SageMaker.<br>
+**Hyperparameter Setup:** Defines a range of hyperparameters (lr, batch-size, epochs) using SageMaker’s ContinuousParameter, CategoricalParameter, and IntegerParameter.<br>
+**Hyperparameter Tuner Creation:** Creates a HyperparameterTuner object with configurations like objective_metric_name, tuning ranges, job limits, and metric definitions.<br>
+**Hyperparameter Tuning Execution:** Runs the tuning process with tuner.fit using S3 paths for training and validation datasets.<br>
+**Accessing Results:** Demonstrates fetching the best hyperparameters from the tuning job.<br>
+**Best Hyperparameter Selection:** Constructs a dictionary of the best hyperparameters, including batch size and learning rate.<br>
+**Optional Estimator Attachments:** Provides flexibility to attach and control the estimator outside the tuner context.<br>
+**Metric Analysis:** Includes definitions and regex for tracking metrics like epoch_accuracy and epoch_loss during tuning.<br>
+**Parallel Jobs:** Configures parallel jobs to accelerate hyperparameter tuning without exceeding resource limits.<br>
+**Validation Strategy:** Specifies a split between training and validation datasets for robust tuning outcomes.<br>
+</p>
+<p>
+**Model Deployment and Testing Steps:**
+**Training Validation Count:** Counts the test dataset files using shell commands like find.<br>
+**S3 Test Data Upload:** Illustrates uploading test datasets to an S3 bucket using SageMaker’s session tools.<br>
+**Training Job Monitoring:** Fetches details of the latest training job for review, including the job name, client, and description.<br>
+**Endpoint Deployment:** Deploys the trained model to a SageMaker endpoint with specific instance configurations and an endpoint name.<br>
+**Listing Endpoints:** Provides commands to list active SageMaker endpoints for monitoring.<br>
+**Managing Endpoints:** Shows commands to delete unused endpoint configurations.<br>
+**Endpoint Cleanup Reminder:** Advises deleting endpoints once testing or deployment is complete to avoid incurring costs.<br>
+**Asynchronous Inference:** Demonstrates invoking an endpoint asynchronously, with input data located in S3.<br>
+**Inference Response Handling:** Retrieves and displays the response from asynchronous inference requests.<br>
+**Error Logging:** Includes methods to locate inference errors or failures in S3 logs for debugging.<br>
+</p>
 
 ## Hyperparameter Tuning
 Hyperparameter tuning in Amazon SageMaker is used to automatically optimize the hyperparameters of a machine learning model to achieve the best possible performance on a specific objective metric, such as accuracy, F1 score, or loss. Hyperparameters are configuration settings that control the training process, such as learning rate, batch size, and the number of layers in a neural network. The learning rate in our case ranged beteen 0.001 and 0.1, the batch size values are 32, 64, and 128. We were aiming to maximise accuracy.
