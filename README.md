@@ -9,14 +9,16 @@ Enter AWS  and open SageMaker Studio. Download the starter files. Download/Make 
 
 ## Dataset
 
-### Overview
-**TODO**: Explain about the data you are using and where you got it from.
-
 ### Access
-**TODO**: Explain how you are accessing the data in AWS and how you uploaded it
+You can access the data in several ways. You can download the data from "https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip", unzip it on your local machine and upload the data directly to your S3 buckets.
+Alternatively you can upload the zip file into your JupyterLab file explorer and then use code in your Jupyter notebook (train_and_deploy.ipynb) to extract the data and sync the data to your S3 buckets.
+
+### Overview
+The provided dataset is a dog breed classification dataset. It contains images of 133 dog breeds divided into training, testing and validation datasets.
 
 ## Hyperparameter Tuning
 **TODO**: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+
 
 Remember that your README should:
 - Include a screenshot of completed training jobs
@@ -38,5 +40,3 @@ Remember that your README should:
 
 **TODO** Remember to provide a screenshot of the deployed active endpoint in Sagemaker.
 
-## Standout Suggestions
-**TODO (Optional):** This is where you can provide information about any standout suggestions that you have attempted.
