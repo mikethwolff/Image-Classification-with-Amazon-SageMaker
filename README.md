@@ -72,7 +72,8 @@ Debugging and profiling in Amazon SageMaker are essential for identifying perfor
 For debugging and profiling the model we defined rules, collection_configs, hook_config, and profiler_config, which we passed to the Sagemaker estimator.
 
 ### Results
-The [profiler report](.//ProfilerReport/profiler-output/profiler-report.html) can be found under the directory ProfilerReport inside the directory project-output.
+The [profiler report](./ProfilerReport/profiler-output/profiler-report.html) can be found under the directory ProfilerReport inside the directory project-output.
+<a href="./ProfilerReport/profiler-output/profiler-report.html" target="_blank">profiler report</a>
 
 The following image shows a screenshot of the CPU utilization during the training process:
 
