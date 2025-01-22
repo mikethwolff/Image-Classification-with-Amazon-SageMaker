@@ -71,13 +71,16 @@ For this experiment whe chose the Resnet-50 (residual neural network). This is a
 **Training Validation Count:** Counts the test dataset files using shell commands like find.<br>
 **S3 Test Data Upload:** Illustrates uploading test datasets to an S3 bucket using SageMaker’s session tools.<br>
 **Training Job Monitoring:** Fetches details of the latest training job for review, including the job name, client, and description.<br>
-**Endpoint Deployment:** Deploys the trained model to a SageMaker endpoint with specific instance configurations and an endpoint name.<br>
-**Listing Endpoints:** Provides commands to list active SageMaker endpoints for monitoring.<br>
-**Managing Endpoints:** Shows commands to delete unused endpoint configurations.<br>
+**Creating/Managing/Listing Endpoint Deployment:** Deploys the trained model to a SageMaker endpoint with specific instance configurations and an endpoint name. Provides commands to list active SageMaker endpoints for monitoring.<br>
+**Endpoints:** Shows commands to delete unused endpoint configurations.<br>
 **Endpoint Cleanup Reminder:** Advises deleting endpoints once testing or deployment is complete to avoid incurring costs.<br>
-**Asynchronous Inference:** Demonstrates invoking an endpoint asynchronously, with input data located in S3.<br>
-**Inference Response Handling:** Retrieves and displays the response from asynchronous inference requests.<br>
 **Error Logging:** Includes methods to locate inference errors or failures in S3 logs for debugging.<br>
 
+<p align="center">
+  <img src="./screenshots/screenshot_project_11.JPG" />
+</p>
+<p align="center">
+  <img src="./screenshots/screenshot_project_12.JPG" />
+</p>
 **TODO** Remember to provide a screenshot of the deployed active endpoint in Sagemaker.
 
