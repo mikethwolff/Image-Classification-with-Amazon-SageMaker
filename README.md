@@ -19,7 +19,7 @@ Project steps include
 
 ### Access
 You can access the data in several ways. You can download the data from "https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip", unzip it on your local machine and upload the data directly to your S3 buckets.
-Alternatively you can upload the zip file into your JupyterLab file explorer and then use code in your Jupyter notebook (e.g. **train_and_deploy.ipynb**) to extract the data and sync the data to your S3 buckets.
+Alternatively you can upload the zip file into your JupyterLab file explorer and then use code in your Jupyter notebook (e.g. [**train_and_deploy.ipynb**](./train_and_deploy.ipynb) ) to extract the data and sync the data to your S3 buckets.
 
 ### Overview
 The provided dataset is a dog breed classification dataset. It contains images of 133 dog breeds divided into training, testing and validation datasets. In total more than 8000 image files.
@@ -73,7 +73,6 @@ For debugging and profiling the model we defined rules, collection_configs, hook
 
 ### Results
 The [profiler report](./ProfilerReport/profiler-output/profiler-report.html) can be found under the directory ProfilerReport inside the directory project-output.
-<a href="./ProfilerReport/profiler-output/profiler-report.html" target="_blank">profiler report</a>
 
 The following image shows a screenshot of the CPU utilization during the training process:
 
