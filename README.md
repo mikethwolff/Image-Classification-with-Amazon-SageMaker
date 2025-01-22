@@ -17,11 +17,17 @@ Alternatively you can upload the zip file into your JupyterLab file explorer and
 The provided dataset is a dog breed classification dataset. It contains images of 133 dog breeds divided into training, testing and validation datasets.
 
 ## Hyperparameter Tuning
-**TODO**: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+Hyperparameter tuning in Amazon SageMaker is used to automatically optimize the hyperparameters of a machine learning model to achieve the best possible performance on a specific objective metric, such as accuracy, F1 score, or loss. Hyperparameters are configuration settings that control the training process, such as learning rate, batch size, and the number of layers in a neural network. The learning rate in our case ranged beteen 0.001 and 0.1, the batch size values are 32, 64, and 128. We were aiming to maximise accuracy.
+
 <p align="center">
   <img src="./screenshots/screenshot_project_4.JPG" />
 </p>
-![Hyperparameter tuning jobs](https://github.com/mikethwolff/Images-Classification-with-AWS-SageMaker/screenshots/screenshot_project_4.JPG)
+<p align="center">
+  <img src="./screenshots/screenshot_project_5.JPG" />
+</p>
+<p align="center">
+  <img src="./screenshots/screenshot_project_8.JPG" />
+</p>
 
 Remember that your README should:
 - Include a screenshot of completed training jobs
