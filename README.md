@@ -11,19 +11,21 @@ Enter AWS  and open SageMaker Studio. Download the starter files. Download/Make 
 
 ### Access
 You can access the data in several ways. You can download the data from "https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip", unzip it on your local machine and upload the data directly to your S3 buckets.
-Alternatively you can upload the zip file into your JupyterLab file explorer and then use code in your Jupyter notebook (e.g. train_and_deploy.ipynb) to extract the data and sync the data to your S3 buckets.
+Alternatively you can upload the zip file into your JupyterLab file explorer and then use code in your Jupyter notebook (e.g. **train_and_deploy.ipynb**) to extract the data and sync the data to your S3 buckets.
 
 ### Overview
 The provided dataset is a dog breed classification dataset. It contains images of 133 dog breeds divided into training, testing and validation datasets.
 
 ## Project Steps
-
-
-
-
+Project steps include 
+- envionment setup,
+- data upload and exploration,
+- hyperparameter tuning,
+- model profiling and
+- debugging, model deploying and prediction.
 
 ## Hyperparameter Tuning
-Hyperparameter tuning in Amazon SageMaker is used to automatically optimize the hyperparameters of a machine learning model to achieve the best possible performance on a specific objective metric, such as accuracy, F1 score, or loss. Hyperparameters are configuration settings that control the training process, such as learning rate, batch size, and the number of layers in a neural network. The learning rate in our case ranged beteen 0.001 and 0.1, the batch size values are 32, 64, and 128. We were aiming to maximise accuracy.
+Hyperparameter tuning in Amazon SageMaker is used to automatically optimize the hyperparameters of a machine learning model to achieve the best possible performance on a specific objective metric, such as accuracy, F1 score, or loss. Hyperparameters are configuration settings that control the training process, such as learning rate, batch size, and the number of layers in a neural network. The learning rate in our case ranged **beteen 0.001 and 0.1**, the **batch size values are 32, 64, and 128**. We were aiming to maximise accuracy.
 
 **Hyperparameter Tuning Steps:**<br>
 The notebook highlights hyperparameter tuning to optimize model performance by fine-tuning a pre-trained model in SageMaker.<br>
