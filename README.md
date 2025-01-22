@@ -81,7 +81,7 @@ The following image shows a screenshot of the CPU utilization during the trainin
 </p>
 
 ## Model Deployment
-For this experiment whe chose the Resnet-50 (residual neural network). This is a variation of ResNet architecture with 50 deep layers that has been trained on at least one million images from the ImageNet database. The 50-layer ResNet uses a bottleneck design for the building block. A bottleneck residual block uses 1×1 convolutions, known as a “bottleneck”, which reduces the number of parameters and matrix multiplications. This enables much faster training of each layer.
+For this experiment whe chose the Resnet-50 (residual neural network). ResNet50 is a deep convolutional neural network (CNN) architecture that was developed by Microsoft Research in 2015. It is a variant of the popular ResNet architecture, which stands for “Residual Network.” The “50” in the name refers to the number of layers in the network, which is 50 layers deep. (Source: [medium.com](https://medium.com/@nitishkundu1993/exploring-resnet50-an-in-depth-look-at-the-model-architecture-and-code-implementation-d8d8fa67e46f))
 
 **Model Deployment and Testing Steps:**
 **Training Job Monitoring:** Fetches details of the latest training job for review, including the job name, client, and description.<br>
