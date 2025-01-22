@@ -18,7 +18,9 @@ The provided dataset is a dog breed classification dataset. It contains images o
 
 ## Hyperparameter Tuning
 **TODO**: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
-
+<p align="center">
+  <img src="./screenshots/screenshot_project_4.JPG" />
+</p>
 ![Hyperparameter tuning jobs](https://github.com/mikethwolff/Images-Classification-with-AWS-SageMaker/screenshots/screenshot_project_4.JPG)
 
 Remember that your README should:
