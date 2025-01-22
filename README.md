@@ -9,9 +9,10 @@ Clone Github repository or download the starter files. Enter AWS  and open SageM
 
 This project contains the following files: 
 
-[**train_and_deploy.ipynb**](./train_and_deploy.ipynb): Jupyter notebook used in JupyterLab to perform the hyperparameter optimization, final model training, and model deployment.
-[**hpo.py**](./hpo.py): Python script file used for hyperparameter optimization
-[**train_model.py**](./train_model.py): Python script used for model training and deployment.
+[**train_and_deploy.ipynb**](./train_and_deploy.ipynb): Jupyter notebook used in JupyterLab to perform the hyperparameter optimization, final model training, and model deployment.<br>
+[**hpo.py**](./hpo.py): Python script file used for hyperparameter optimization<br>
+[**train_model.py**](./train_model.py): Python script used for model training and deployment.<br>
+[**inference.py**](./inference.py): Python script prepares the model for inference.<br>
 
 ### Project Steps
 Project steps include
