@@ -18,7 +18,7 @@ The provided dataset is a dog breed classification dataset. It contains images o
 
 ## Project Steps
 
-<p>
+
 **Hyperparameter Tuning Steps:**<br>
 The notebook highlights hyperparameter tuning to optimize model performance by fine-tuning a pre-trained model in SageMaker.<br>
 **Hyperparameter Setup:** Defines a range of hyperparameters (lr, batch-size, epochs) using SageMaker’s ContinuousParameter, CategoricalParameter, and IntegerParameter.<br>
@@ -30,8 +30,8 @@ The notebook highlights hyperparameter tuning to optimize model performance by f
 **Metric Analysis:** Includes definitions and regex for tracking metrics like epoch_accuracy and epoch_loss during tuning.<br>
 **Parallel Jobs:** Configures parallel jobs to accelerate hyperparameter tuning without exceeding resource limits.<br>
 **Validation Strategy:** Specifies a split between training and validation datasets for robust tuning outcomes.<br>
-</p>
-<p>
+
+
 **Model Deployment and Testing Steps:**
 **Training Validation Count:** Counts the test dataset files using shell commands like find.<br>
 **S3 Test Data Upload:** Illustrates uploading test datasets to an S3 bucket using SageMaker’s session tools.<br>
@@ -43,7 +43,7 @@ The notebook highlights hyperparameter tuning to optimize model performance by f
 **Asynchronous Inference:** Demonstrates invoking an endpoint asynchronously, with input data located in S3.<br>
 **Inference Response Handling:** Retrieves and displays the response from asynchronous inference requests.<br>
 **Error Logging:** Includes methods to locate inference errors or failures in S3 logs for debugging.<br>
-</p>
+
 
 ## Hyperparameter Tuning
 Hyperparameter tuning in Amazon SageMaker is used to automatically optimize the hyperparameters of a machine learning model to achieve the best possible performance on a specific objective metric, such as accuracy, F1 score, or loss. Hyperparameters are configuration settings that control the training process, such as learning rate, batch size, and the number of layers in a neural network. The learning rate in our case ranged beteen 0.001 and 0.1, the batch size values are 32, 64, and 128. We were aiming to maximise accuracy.
