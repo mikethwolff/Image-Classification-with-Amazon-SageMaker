@@ -5,7 +5,15 @@ Task: Train a pretrained model that can perform image classification by using th
 The primary goal of this project is to demonstrate the setup of an ML infrastructure that can facilitate the training of accurate models. It's not just about achieving high accuracy but about understanding and implementing the end-to-end process that makes ML development sustainable, scalable, and efficient. We will use a pretrained image classification model to classify the dog breed, given an image of the dog. This will be done by loading the pretrained model then using transfer learning we adapt the model to the dog breed classification dataset.
 
 ## Project Set Up and Installation
-Enter AWS  and open SageMaker Studio. Download the starter files. Download/Make the dataset available.
+Clone Github repository or download the starter files. Enter AWS  and open SageMaker Studio. Download and make the dataset available. Create notebook instance, load files to JupyterLab, start developing notebook.
+
+### Project Steps
+Project steps include
+- envionment setup,
+- data upload and exploration,
+- hyperparameter tuning,
+- model profiling and debugging,
+- model deploying and prediction.
 
 ## Dataset
 
@@ -15,14 +23,6 @@ Alternatively you can upload the zip file into your JupyterLab file explorer and
 
 ### Overview
 The provided dataset is a dog breed classification dataset. It contains images of 133 dog breeds divided into training, testing and validation datasets.
-
-## Project Steps
-Project steps include 
-- envionment setup,
-- data upload and exploration,
-- hyperparameter tuning,
-- model profiling and
-- debugging, model deploying and prediction.
 
 ## Hyperparameter Tuning
 Hyperparameter tuning in Amazon SageMaker is used to automatically optimize the hyperparameters of a machine learning model to achieve the best possible performance on a specific objective metric, such as accuracy, F1 score, or loss. Hyperparameters are configuration settings that control the training process, such as learning rate, batch size, and the number of layers in a neural network. The learning rate in our case ranged **beteen 0.001 and 0.1**, the **batch size values are 32, 64, and 128**. We were aiming to maximise accuracy.
