@@ -40,6 +40,9 @@ The notebook highlights hyperparameter tuning to optimize model performance by f
 **Validation Strategy:** Specifies a split between training and validation datasets for robust tuning outcomes.<br>
 
 <p align="center">
+  <img src="./screenshots/screenshot_project_10.JPG" />
+</p>
+<p align="center">
   <img src="./screenshots/screenshot_project_4.JPG" />
 </p>
 The image above shows the completed hyperparameter jobs. The image below shows the completed training jobs of one hyperparameter job.
@@ -51,11 +54,13 @@ The image above shows the completed hyperparameter jobs. The image below shows t
   <img src="./screenshots/screenshot_project_8.JPG" />
 </p>
 
-Remember that your README should:
-- Include a screenshot of completed training jobs
-- Logs metrics during the training process
-- Tune at least two hyperparameters
-- Retrieve the best best hyperparameters from all your training jobs
+The image below shows the retrieve of the completed jobs and the job with the best result.
+<p align="center">
+  <img src="./screenshots/screenshot_project_16.JPG" />
+</p>
+<p align="center">
+  <img src="./screenshots/screenshot_project_17.JPG" />
+</p>
 
 ## Debugging and Profiling
 **TODO**: Give an overview of how you performed model debugging and profiling in Sagemaker
