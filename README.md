@@ -22,9 +22,11 @@ Hyperparameter tuning in Amazon SageMaker is used to automatically optimize the 
 <p align="center">
   <img src="./screenshots/screenshot_project_4.JPG" />
 </p>
+The image above shows the completed hyperparameter jobs. The image above shows the completed training jobs of one hyperparameter job.
 <p align="center">
   <img src="./screenshots/screenshot_project_5.JPG" />
 </p>
+
 <p align="center">
   <img src="./screenshots/screenshot_project_8.JPG" />
 </p>
