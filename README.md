@@ -22,7 +22,11 @@ You can access the data in several ways. You can download the data from "https:/
 Alternatively you can upload the zip file into your JupyterLab file explorer and then use code in your Jupyter notebook (e.g. **train_and_deploy.ipynb**) to extract the data and sync the data to your S3 buckets.
 
 ### Overview
-The provided dataset is a dog breed classification dataset. It contains images of 133 dog breeds divided into training, testing and validation datasets.
+The provided dataset is a dog breed classification dataset. It contains images of 133 dog breeds divided into training, testing and validation datasets. In total more than 8000 image files.
+
+<p align="center">
+  <img src="./screenshots/screenshot_project_18.JPG" /><img src="./screenshots/screenshot_project_19.JPG" />
+</p>
 
 ## Hyperparameter Tuning
 Hyperparameter tuning in Amazon SageMaker is used to automatically optimize the hyperparameters of a machine learning model to achieve the best possible performance on a specific objective metric, such as accuracy, F1 score, or loss. Hyperparameters are configuration settings that control the training process, such as learning rate, batch size, and the number of layers in a neural network. The learning rate in our case ranged **beteen 0.001 and 0.1**, the **batch size values are 32, 64, and 128**. We were aiming to maximise accuracy.
@@ -63,7 +67,6 @@ The image below shows the retrieve of the completed jobs and the job with the be
 </p>
 
 ## Debugging and Profiling
-**TODO**: Give an overview of how you performed model debugging and profiling in Sagemaker
 Debugging and profiling in Amazon SageMaker are essential for identifying performance bottlenecks and ensuring model correctness during training and inference. SageMaker provides powerful tools like SageMaker Debugger and SageMaker Profiler to streamline these processes.
 
 ### Results
@@ -88,7 +91,7 @@ For this experiment whe chose the Resnet-50 (residual neural network). This is a
   <img src="./screenshots/screenshot_project_12.JPG" />
 </p>
 
-**Endpoint Cleanup Reminder:** Remember to delete endpoints once testing or deployment is complete to avoid incurring costs. This can be done via console or Jupyter notebook.<br>
+**Endpoint Cleanup:** Remember to delete endpoints once testing or deployment is complete to avoid incurring costs. This can be done via console or Jupyter notebook.<br>
 <p align="center">
   <img src="./screenshots/screenshot_project_15.JPG" />
 </p>
