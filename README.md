@@ -7,6 +7,12 @@ The primary goal of this project is to demonstrate the setup of an ML infrastruc
 ## Project Set Up and Installation
 Clone Github repository or download the starter files. Enter AWS  and open SageMaker Studio. Download and make the dataset available. Create notebook instance, load files to JupyterLab, start developing notebook.
 
+This project contains the following files: 
+
+[**train_and_deploy.ipynb**](./train_and_deploy.ipynb): Jupyter notebook used in JupyterLab to perform the hyperparameter optimization, final model training, and model deployment.
+[**hpo.py**](./hpo.py): Python script file used for hyperparameter optimization
+[**train_model.py**](./train_model.py): Python script used for model training and deployment.
+
 ### Project Steps
 Project steps include
 - envionment setup,
