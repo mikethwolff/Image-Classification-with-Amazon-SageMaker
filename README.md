@@ -69,11 +69,16 @@ The image below shows the retrieve of the completed jobs and the job with the be
 ## Debugging and Profiling
 Debugging and profiling in Amazon SageMaker are essential for identifying performance bottlenecks and ensuring model correctness during training and inference. SageMaker provides powerful tools like SageMaker Debugger and SageMaker Profiler to streamline these processes.
 
+For debugging and profiling the model we defined rules, collection_configs, hook_config, and profiler_config, which we passed to the Sagemaker estimator.
+
 ### Results
-**TODO**: What are the results/insights did you get by profiling/debugging your model?
+The [profiler report](.//ProfilerReport/profiler-output/profiler-report.html) can be found under the directory ProfilerReport inside the directory project-output.
 
-**TODO** Remember to provide the profiler html/pdf file in your submission.
+The following image shows a screenshot of the CPU utilization during the training process:
 
+<p align="center">
+  <img src="./screenshots/screenshot_project_14.JPG" />
+</p>
 
 ## Model Deployment
 For this experiment whe chose the Resnet-50 (residual neural network). This is a variation of ResNet architecture with 50 deep layers that has been trained on at least one million images from the ImageNet database. The 50-layer ResNet uses a bottleneck design for the building block. A bottleneck residual block uses 1×1 convolutions, known as a “bottleneck”, which reduces the number of parameters and matrix multiplications. This enables much faster training of each layer.
