@@ -57,6 +57,7 @@ Remember that your README should:
 
 ## Debugging and Profiling
 **TODO**: Give an overview of how you performed model debugging and profiling in Sagemaker
+Debugging and profiling in Amazon SageMaker are essential for identifying performance bottlenecks and ensuring model correctness during training and inference. SageMaker provides powerful tools like SageMaker Debugger and SageMaker Profiler to streamline these processes.
 
 ### Results
 **TODO**: What are the results/insights did you get by profiling/debugging your model?
@@ -68,12 +69,9 @@ Remember that your README should:
 For this experiment whe chose the Resnet-50 (residual neural network). This is a variation of ResNet architecture with 50 deep layers that has been trained on at least one million images from the ImageNet database. The 50-layer ResNet uses a bottleneck design for the building block. A bottleneck residual block uses 1×1 convolutions, known as a “bottleneck”, which reduces the number of parameters and matrix multiplications. This enables much faster training of each layer.
 
 **Model Deployment and Testing Steps:**
-**Training Validation Count:** Counts the test dataset files using shell commands like find.<br>
-**S3 Test Data Upload:** Illustrates uploading test datasets to an S3 bucket using SageMaker’s session tools.<br>
 **Training Job Monitoring:** Fetches details of the latest training job for review, including the job name, client, and description.<br>
 **Creating/Managing/Listing Endpoint Deployment:** Deploys the trained model to a SageMaker endpoint with specific instance configurations and an endpoint name. Provides commands to list active SageMaker endpoints for monitoring.<br>
-**Endpoints:** Shows commands to delete unused endpoint configurations.<br>
-**Endpoint Cleanup Reminder:** Advises deleting endpoints once testing or deployment is complete to avoid incurring costs.<br>
+
 **Error Logging:** Includes methods to locate inference errors or failures in S3 logs for debugging.<br>
 
 <p align="center">
@@ -82,5 +80,8 @@ For this experiment whe chose the Resnet-50 (residual neural network). This is a
 <p align="center">
   <img src="./screenshots/screenshot_project_12.JPG" />
 </p>
-**TODO** Remember to provide a screenshot of the deployed active endpoint in Sagemaker.
+**Endpoint Cleanup Reminder:** Remember to delete endpoints once testing or deployment is complete to avoid incurring costs. This can be done via console or Jupyter notebook.<br>
+<p align="center">
+  <img src="./screenshots/screenshot_project_15.JPG" />
+</p>
 
