@@ -95,10 +95,25 @@ For debugging and profiling the model we defined rules, collection_configs, hook
 
 The [profiler report](./ProfilerReport/profiler-output/profiler-report.html) can be found under the directory ProfilerReport inside the directory project-output.
 
+<p align="center">
+  <img src="./screenshots/profiler_10.JPG" />
+</p>
+<p align="center">
+  <img src="./screenshots/profiler_00.JPG" />
+</p>
+
+<p align="center">
+  <img src="./screenshots/profiler_2.JPG" />
+</p>
+
 The following image shows a screenshot of the CPU utilization during the training process:
 
 <p align="center">
   <img src="./screenshots/screenshot_project_14.JPG" />
+</p>
+
+<p align="center">
+  <img src="./screenshots/profiler_4.JPG" />
 </p>
 
 ## Model Deployment
