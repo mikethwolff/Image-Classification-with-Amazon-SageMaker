@@ -153,8 +153,6 @@ For this experiment whe chose the Resnet-50 (residual neural network). ResNet50 
 **Training Job Monitoring:** Fetches details of the latest training job for review, including the job name, client, and description.<br>
 **Creating/Managing/Listing Endpoint Deployment:** Deploys the trained model to a SageMaker endpoint with specific instance configurations and an endpoint name. Provides commands to list active SageMaker endpoints for monitoring.<br>
 
-**Error Logging:** Includes methods to locate inference errors or failures in S3 logs for debugging.<br>
-
 <p align="center">
   <img src="./screenshots/screenshot_project_11.JPG" />
 </p>
@@ -163,6 +161,7 @@ For this experiment whe chose the Resnet-50 (residual neural network). ResNet50 
 </p>
 
 **Endpoint Cleanup:** Remember to delete endpoints once testing or deployment is complete to avoid incurring costs. This can be done via console or Jupyter notebook.<br>
+
 <p align="center">
   <img src="./screenshots/screenshot_project_15.JPG" />
 </p>
