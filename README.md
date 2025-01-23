@@ -7,15 +7,15 @@ The primary goal of this project is to demonstrate the setup of an ML infrastruc
 ## Project Set Up and Installation
 
 - Clone Github repository or download the starter files.
-- Enter AWS  and open SageMaker Studio.
+- Enter AWS, open SageMaker Studio and setup SageMaker domain.
 - Download and make the dataset available.
-- Create notebook instance, load files to JupyterLab, start developing notebook.
+- Create notebook instance, load files to JupyterLab, start developing.
 
 <p align="center">
   <img src="./screenshots/screenshot_project_21.JPG" />
 </p>
 
-This project contains the following files: 
+This project contains the following notebook and scripts: 
 
 [**train_and_deploy.ipynb**](./train_and_deploy.ipynb): Jupyter notebook used in JupyterLab to perform the complete workflow from environment setup to model deployment.<br>
 [**hpo.py**](./hpo.py): Python script file used for hyperparameter optimization<br>
@@ -24,7 +24,7 @@ This project contains the following files:
 
 ### Project Steps
 
-The following project steps will be performed
+The following steps have been performed and can be followed in the notebook:
 - envionment setup,
 - data upload and exploration,
 - hyperparameter tuning,
@@ -33,12 +33,12 @@ The following project steps will be performed
 
 ## Dataset
 
-### Access
+### Data Access
 
 You can access the data in several ways. You can download the data from "https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip", unzip it onto your local machine and upload the data directly to your S3 buckets.
 Alternatively you can upload the zip file into your JupyterLab file explorer and then use code in your Jupyter notebook (e.g. [**train_and_deploy.ipynb**](./train_and_deploy.ipynb) ) to extract the data and sync the data to your S3 buckets.
 
-### Overview
+### Data Overview
 
 The provided dataset is a dog breed classification dataset. It contains images of 133 dog breeds divided into datasets for training, testing and validation. In total more than 8000 image files.
 
@@ -50,7 +50,7 @@ The provided dataset is a dog breed classification dataset. It contains images o
 
 Hyperparameter tuning in Amazon SageMaker is used to automatically optimize the hyperparameters of a machine learning model to achieve the best possible performance on a specific objective metric, such as accuracy, F1 score, or loss. Hyperparameters are configuration settings that control the training process, such as learning rate, batch size, and the number of layers in a neural network. The learning rate in our case ranged **beteen 0.001 and 0.1**, the **batch size values are 32, 64, and 128**. We were aiming to maximise accuracy.
 
-**Hyperparameter Tuning Steps:**<br>
+#### Hyperparameter Tuning Steps:
 The notebook highlights hyperparameter tuning to optimize model performance by fine-tuning a pre-trained model in SageMaker.<br>
 **Hyperparameter Setup:** Defines a range of hyperparameters (lr, batch-size, epochs) using SageMaker’s ContinuousParameter, CategoricalParameter, and IntegerParameter.<br>
 **Hyperparameter Tuner Creation:** Creates a HyperparameterTuner object with configurations like objective_metric_name, tuning ranges, job limits, and metric definitions.<br>
