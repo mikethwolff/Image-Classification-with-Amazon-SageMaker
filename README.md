@@ -62,19 +62,18 @@ The notebook highlights hyperparameter tuning to optimize model performance by f
 **Parallel Jobs:** Configures parallel jobs to accelerate hyperparameter tuning without exceeding resource limits.<br>
 **Validation Strategy:** Specifies a split between training and validation datasets for robust tuning outcomes.<br>
 
+Below a screenshot of logs of a successful training job:
 <p align="center">
   <img src="./screenshots/screenshot_project_10.JPG" />
 </p>
+
 <p align="center">
   <img src="./screenshots/screenshot_project_4.JPG" />
 </p>
+
 The image above shows the completed hyperparameter jobs. The image below shows the completed training jobs of one hyperparameter job.
 <p align="center">
   <img src="./screenshots/screenshot_project_5.JPG" />
-</p>
-
-<p align="center">
-  <img src="./screenshots/screenshot_project_8.JPG" />
 </p>
 
 The image below shows the retrieve of the completed jobs and the job with the best result.
@@ -83,6 +82,13 @@ The image below shows the retrieve of the completed jobs and the job with the be
 </p>
 <p align="center">
   <img src="./screenshots/screenshot_project_17.JPG" />
+</p>
+
+We used the best hyperparameters to create and finetune a new model.
+We used the hpo.py script for setting up the hyperparameter tuning process. We use the train_model.py for handling the training phase of our classification task.
+
+<p align="center">
+  <img src="./screenshots/screenshot_project_8.JPG" />
 </p>
 
 ## Debugging and Profiling
