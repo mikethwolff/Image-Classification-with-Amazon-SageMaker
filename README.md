@@ -93,7 +93,7 @@ For debugging and profiling the model we defined rules, collection_configs, hook
 
 ### Results
 
-The [profiler report](./ProfilerReport/profiler-output/profiler-report.html) can be found under the directory ProfilerReport inside the directory project-output.
+The complete [profiler report](./ProfilerReport/profiler-output/profiler-report.html) can be found in the directory "ProfilerReport/project-output".
 
 <p align="center">
   <img src="./screenshots/profiler_10.JPG" />
