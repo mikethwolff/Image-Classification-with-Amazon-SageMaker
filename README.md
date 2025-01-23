@@ -98,8 +98,8 @@ The complete [profiler report](./ProfilerReport/profiler-output/profiler-report.
 <p align="center">
   <img src="./screenshots/profiler_10.JPG" />
 </p>
-<p align="center">
-  <img src="./screenshots/profiler_00.JPG" with="100%" />
+<p>
+  <img src="./screenshots/profiler_00.JPG" />
 </p>
 
 <p align="center">
