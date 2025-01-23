@@ -95,6 +95,20 @@ For debugging and profiling the model we defined rules, collection_configs, hook
 
 The complete [profiler report](./ProfilerReport/profiler-output/profiler-report.html) can be found in the directory "ProfilerReport/project-output".
 
+#### SageMaker Debugger Profiling Report
+
+SageMaker Debugger auto generated a report of the last training job:
+```
+# Parameters
+processing_job_arn = "arn:aws:sagemaker:us-east-1:861747698849:processing-job/final-training-2025-01-22--ProfilerReport-cd6d7e20"
+```
+You can generate similar reports on all supported training jobs. The report provides summary of training job, system resource usage statistics, framework metrics, rules summary, and detailed analysis from each rule.
+
+#### Training job summary
+
+The following table gives a summary about the training job. The table includes information about when the training job started and ended, how much time initialization, training loop and finalization took. Your training job started on 01/22/2025 at 12:20:05 and ran for 6534 seconds. Your training job started on 01/22/2025 at 12:20:05 and ran for 6534 seconds.. No step information was profiled from your training
+
+
 <p align="center">
   <img src="./screenshots/profiler_10.JPG" />
 </p>
@@ -107,7 +121,7 @@ The following table shows statistics of resource utilization per worker (node), 
   <img src="./screenshots/profiler_00.JPG" />
 </p>
 
-The 95th percentile of the total GPU utilization on node algo-1 is only 0%. However, the 95th percentile of the total CPU utilization is 72%. GPUs on node algo-1 are underutilized, likely because of CPU bottlenecks.
+The 95th percentile of the total GPU utilization on node algo-1 is only 0%. However, the 95th percentile of the total CPU utilization is 72%.
 
 The following screenshot shows high CPU utilization during the training process, since we were only using CPU:
 
@@ -124,9 +138,7 @@ The following boxplots are a snapshot from the timestamps. They the total CPU ut
   <img src="./screenshots/profiler_2.JPG" />
 </p>
 
-It appears that our training job is underutilizing the instance. We may want to consider either switch to a smaller instance type or to increase the batch size. 
-
-
+It appears that our training job is **underutilizing** the instance. We may want to consider either **switch to a smaller instance type or to increase the batch size**. 
 
 ## Model Deployment
 
