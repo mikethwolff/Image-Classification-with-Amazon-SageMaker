@@ -63,6 +63,7 @@ The notebook highlights hyperparameter tuning to optimize model performance by f
 **Validation Strategy:** Specifies a split between training and validation datasets for robust tuning outcomes.<br>
 
 Below a screenshot of logs of a successful training job:
+
 <p align="center">
   <img src="./screenshots/screenshot_project_10.JPG" />
 </p>
@@ -72,14 +73,17 @@ Below a screenshot of logs of a successful training job:
 </p>
 
 The image above shows the completed hyperparameter jobs. The image below shows the completed training jobs of one hyperparameter job.
+
 <p align="center">
   <img src="./screenshots/screenshot_project_5.JPG" />
 </p>
 
 The image below shows the retrieve of the completed jobs and the job with the best result.
+
 <p align="center">
   <img src="./screenshots/screenshot_project_16.JPG" />
 </p>
+
 <p align="center">
   <img src="./screenshots/screenshot_project_17.JPG" />
 </p>
@@ -104,6 +108,7 @@ The complete [profiler report](./ProfilerReport/profiler-output/profiler-report.
 #### SageMaker Debugger Profiling Report
 
 SageMaker Debugger auto generated a report of the last training job:
+
 ```
 # Parameters
 processing_job_arn = "arn:aws:sagemaker:us-east-1:861747698849:processing-job/final-training-2025-01-22--ProfilerReport-cd6d7e20"
@@ -113,7 +118,6 @@ You can generate similar reports on all supported training jobs. The report prov
 #### Training job summary
 
 The following table gives a summary about the training job. The table includes information about when the training job started and ended, how much time initialization, training loop and finalization took. Your training job started on 01/22/2025 at 12:20:05 and ran for 6534 seconds. Your training job started on 01/22/2025 at 12:20:05 and ran for 6534 seconds.. No step information was profiled from your training
-
 
 <p align="center">
   <img src="./screenshots/profiler_10.JPG" />
@@ -156,6 +160,7 @@ For this experiment whe chose the Resnet-50 (residual neural network). ResNet50 
 <p align="center">
   <img src="./screenshots/screenshot_project_12-a.JPG" />
 </p>
+
 <p align="center">
   <img src="./screenshots/screenshot_project_12-b.JPG" />
 </p>
@@ -165,6 +170,7 @@ Find your endpoints in your SageMaker console, under "Inference/Endpoints".
 <p align="center">
   <img src="./screenshots/screenshot_project_11.JPG" />
 </p>
+
 **Endpoint Cleanup:** Remember to delete endpoints once testing or deployment is complete to avoid incurring costs. This can be done via console or Jupyter notebook.<br>
 
 <p align="center">
