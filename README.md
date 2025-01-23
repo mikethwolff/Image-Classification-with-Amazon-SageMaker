@@ -98,23 +98,35 @@ The complete [profiler report](./ProfilerReport/profiler-output/profiler-report.
 <p align="center">
   <img src="./screenshots/profiler_10.JPG" />
 </p>
+
+#### System usage statistics 
+
+The following table shows statistics of resource utilization per worker (node), such as the total CPU and GPU utilization, and the memory utilization on CPU and GPU. The table also includes the total I/O wait time and the total amount of data sent or received in bytes. The table shows min and max values as well as p99, p90 and p50 percentiles.
+
 <p>
   <img src="./screenshots/profiler_00.JPG" />
 </p>
 
-<p align="center">
-  <img src="./screenshots/profiler_2.JPG" />
-</p>
+The 95th percentile of the total GPU utilization on node algo-1 is only 0%. However, the 95th percentile of the total CPU utilization is 72%. GPUs on node algo-1 are underutilized, likely because of CPU bottlenecks.
 
-The following image shows a screenshot of the CPU utilization during the training process:
+The following screenshot shows high CPU utilization during the training process, since we were only using CPU:
 
 <p align="center">
   <img src="./screenshots/screenshot_project_14.JPG" />
 </p>
 
+#### Batch size 
+The BatchSize rule helps to detect if GPU is underutilized because of the batch size being too small. To detect this the rule analyzes the GPU memory footprint, CPU and GPU utilization. The rule checked if the 95th percentile of CPU utilization is below cpu_threshold_p95 of 70%, the 95th percentile of GPU utilization is below gpu_threshold_p95 of 70% and the 95th percentile of memory footprint below gpu_memory_threshold_p95 of 70%. In your training job this happened 14 times. The rule skipped the first 1000 datapoints. The rule computed the percentiles over window size of 500 continuous datapoints. The rule analysed 13068 datapoints and triggered 14 times.
+
+The following boxplots are a snapshot from the timestamps. They the total CPU utilization, the GPU utilization, and the GPU memory usage per GPU (without outliers).
+
 <p align="center">
-  <img src="./screenshots/profiler_4.JPG" />
+  <img src="./screenshots/profiler_2.JPG" />
 </p>
+
+It appears that our training job is underutilizing the instance. We may want to consider either switch to a smaller instance type or to increase the batch size. 
+
+
 
 ## Model Deployment
 
