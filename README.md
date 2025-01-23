@@ -99,7 +99,7 @@ The complete [profiler report](./ProfilerReport/profiler-output/profiler-report.
   <img src="./screenshots/profiler_10.JPG" />
 </p>
 <p align="center">
-  <img src="./screenshots/profiler_00.JPG" />
+  <img src="./screenshots/profiler_00.JPG" with="100%" />
 </p>
 
 <p align="center">
