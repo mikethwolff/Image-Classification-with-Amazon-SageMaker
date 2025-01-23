@@ -157,7 +157,10 @@ For this experiment whe chose the Resnet-50 (residual neural network). ResNet50 
   <img src="./screenshots/screenshot_project_11.JPG" />
 </p>
 <p align="center">
-  <img src="./screenshots/screenshot_project_12.JPG" />
+  <img src="./screenshots/screenshot_project_12-a.JPG" />
+</p>
+<p align="center">
+  <img src="./screenshots/screenshot_project_12-b.JPG" />
 </p>
 
 **Endpoint Cleanup:** Remember to delete endpoints once testing or deployment is complete to avoid incurring costs. This can be done via console or Jupyter notebook.<br>
