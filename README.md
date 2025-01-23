@@ -122,8 +122,7 @@ The following table shows statistics of resource utilization per worker (node), 
 </p>
 
 The 95th percentile of the total GPU utilization on node algo-1 is only 0%. However, the 95th percentile of the total CPU utilization is 72%.
-
-The following screenshot shows high CPU utilization during the training process, since we were only using CPU:
+The following screenshot shows high CPU utilization during the training process, since we were **only using CPU**:
 
 <p align="center">
   <img src="./screenshots/screenshot_project_14.JPG" />
