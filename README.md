@@ -35,7 +35,7 @@ The following project steps will be performed
 
 ### Access
 
-You can access the data in several ways. You can download the data from "https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip", unzip it on your local machine and upload the data directly to your S3 buckets.
+You can access the data in several ways. You can download the data from "https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip", unzip it onto your local machine and upload the data directly to your S3 buckets.
 Alternatively you can upload the zip file into your JupyterLab file explorer and then use code in your Jupyter notebook (e.g. [**train_and_deploy.ipynb**](./train_and_deploy.ipynb) ) to extract the data and sync the data to your S3 buckets.
 
 ### Overview
