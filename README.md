@@ -147,7 +147,7 @@ It appears that our training job is **underutilizing** the instance. We may want
 
 ## Model Deployment
 
-For this experiment whe chose the Resnet-50 (residual neural network). ResNet50 is a deep convolutional neural network (CNN) architecture that was developed by Microsoft Research in 2015. It is a variant of the popular ResNet architecture, which stands for “Residual Network.” The “50” in the name refers to the number of layers in the network, which is 50 layers deep. (Source: [This](https://medium.com/@nitishkundu1993/exploring-resnet50-an-in-depth-look-at-the-model-architecture-and-code-implementation-d8d8fa67e46f) article takes an In-Depth Look at the Model Architecture.)
+For this experiment whe chose the Resnet-50 (residual neural network). ResNet50 is a deep convolutional neural network (CNN) architecture that was developed by Microsoft Research in 2015. It is a variant of the popular ResNet architecture, which stands for “Residual Network.” The “50” in the name refers to the number of layers in the network, which is 50 layers deep. ([This](https://medium.com/@nitishkundu1993/exploring-resnet50-an-in-depth-look-at-the-model-architecture-and-code-implementation-d8d8fa67e46f) article takes an In-Depth Look at the Model Architecture.)
 
 **Model Deployment and Testing Steps:**
 **Training Job Monitoring:** Fetches details of the latest training job for review, including the job name, client, and description.<br>
