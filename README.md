@@ -43,7 +43,7 @@ Alternatively you can upload the zip file into your JupyterLab file explorer and
 The provided dataset is a dog breed classification dataset. It contains images of 133 dog breeds divided into datasets for training, testing and validation. In total more than 8000 image files.
 
 <p align="center">
-  <img src="./screenshots/screenshot_project_18.JPG" /><img src="./screenshots/screenshot_project_19.JPG" />
+  <img src="./screenshots/screenshot_project_18.JPG" width=50% height=50% /><img src="./screenshots/screenshot_project_19.JPG" width=50% height=50% />
 </p>
 
 ## Hyperparameter Tuning
