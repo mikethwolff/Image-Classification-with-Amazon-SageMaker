@@ -88,7 +88,7 @@ The image below shows the retrieve of the completed jobs and the job with the be
   <img src="./screenshots/screenshot_project_17.JPG" />
 </p>
 
-We used the best hyperparameters to create and finetune a new model.
+We used the best hyperparameters to create and finetune a new model (final_training).
 We used the hpo.py script for setting up the hyperparameter tuning process. We use the train_model.py for handling the training phase of our classification task.
 
 <p align="center">
