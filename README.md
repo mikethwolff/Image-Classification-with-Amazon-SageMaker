@@ -154,15 +154,17 @@ For this experiment whe chose the Resnet-50 (residual neural network). ResNet50 
 **Creating/Managing/Listing Endpoint Deployment:** Deploys the trained model to a SageMaker endpoint with specific instance configurations and an endpoint name. Provides commands to list active SageMaker endpoints for monitoring.<br>
 
 <p align="center">
-  <img src="./screenshots/screenshot_project_11.JPG" />
-</p>
-<p align="center">
   <img src="./screenshots/screenshot_project_12-a.JPG" />
 </p>
 <p align="center">
   <img src="./screenshots/screenshot_project_12-b.JPG" />
 </p>
 
+Find your endpoints in your SageMaker console, under "Inference/Endpoints".
+
+<p align="center">
+  <img src="./screenshots/screenshot_project_11.JPG" />
+</p>
 **Endpoint Cleanup:** Remember to delete endpoints once testing or deployment is complete to avoid incurring costs. This can be done via console or Jupyter notebook.<br>
 
 <p align="center">
