@@ -1,6 +1,6 @@
-# Image Classification with AWS SageMaker
+# Image Classification with Amazon SageMaker
 
-Task: Train a pretrained model that can perform image classification by using the AWS Sagemaker profiling, debugger, hyperparameter tuning and other ML engineering practices.
+Task: Train a pretrained model that can perform image classification by using Amazon Sagemaker, profiling, debugger, hyperparameter tuning and other ML engineering practices.
 
 The primary goal of this project is to demonstrate the setup of an ML infrastructure that can facilitate the training of accurate models. It's not just about achieving high accuracy but about understanding and implementing the end-to-end process that makes ML development sustainable, scalable, and efficient. We will use a pretrained image classification model to classify the dog breed, given an image of the dog. This will be done by loading the pretrained model then using transfer learning we adapt the model to the dog breed classification dataset.
 
